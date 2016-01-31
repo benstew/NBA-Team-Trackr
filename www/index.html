@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Belgian Beer Explorer</title>
+    <title>NBA Team Efficiency</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -10,6 +10,7 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="nouislider/jquery.nouislider.min.css" rel="stylesheet">
     <link href="nouislider/jquery.nouislider.pips.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://dl.dropboxusercontent.com/s/xup7s8wvgop92m6/bball.jpg?dl=0">
 </head>
 
 <body>
@@ -19,19 +20,10 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-12 footer">
-            Built by <a href="https://twitter.com/ccoenraets" class="quiet">@ccoenraets</a>
-            with <a href="http://facebook.github.io/react/" class="quiet">React</a>, <a href="http://getbootstrap.com/" class="quiet">Bootstrap</a>,
-            <a href="http://nodejs.org/" class="quiet">Node.js</a> and <a href="http://www.postgresql.org/" class="quiet">Postgres SQL</a>.
-            Data based on <a href="http://en.wikipedia.org/wiki/List_of_Belgian_beer" class="quiet">Wikipedia</a>.
-            Source code available on <a href="https://github.com/ccoenraets/belgian-beer-explorer" class="quiet">Github</a>.
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12">
-            <a href="https://twitter.com/ccoenraets" class="twitter-follow-button" data-show-count="true" data-dnt="true">Follow @ccoenraets</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://belgianbeerexplorer.coenraets.org" data-text="Belgian Beer Explorer with @reactjs, @twbootstrap, @nodejs, and #PostgreSQL + source code">Tweet</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            Project by: <a href="https://twitter.com/bigbenstew" class="quiet">Ben Stewart</a><br>
+            Built with: React.js, Bootstrap, Node.js and PostgreSQL<br>
+            Data scraped from: <a href="http://www.nbaminer.com/team_advanced_stats/" class="quiet">NBA Miner</a>.<br>
+            Source code: <a href="https://github.com/" class="quiet">Github</a>.
         </div>
     </div>
 </div>
@@ -41,7 +33,6 @@
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="nouislider/jquery.nouislider.all.min.js"></script>
 <script src="js/build/data-service.js"></script>
-<!--<script type="text/jsx" src="js/src/app.js"></script>--> <!-- Uncomment for runtime transformation of JSX during development -->
 <script src="js/build/app.js"></script> <!-- Uncomment for runtime transformation of JSX during development -->
 
 </body>
