@@ -1,3 +1,7 @@
+// import React from 'react';
+// var React = require('react')
+// var React = require('../../react/react.js')
+
 var Header = React.createClass({displayName: "Header",
     render: function () {
         return (

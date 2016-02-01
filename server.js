@@ -4,11 +4,11 @@ var express = require('express'),
     teams = require('./server/teams'),
     app = express();
 
-app.set('port', process.env.PORT || 5000);
+app.set('port', process.env.PORT || 3000);
 
 app.use(compression());
 
-app.use('/', express.static(__dirname + '/www'));
+app.use('/', express.static(__dirname + '/client'));
 
 app.get('/teams', teams.findAll);
 app.get('/teams/:id', teams.findById);
