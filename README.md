@@ -11,6 +11,7 @@ if there was any correlation between average margin of victory and the average p
 
 ###Calculations
 Margin = Average Points Scored - Average Points Allowed
+
 Pace: # of Possessions used by a team per 48 mins
 
 ###Built with
