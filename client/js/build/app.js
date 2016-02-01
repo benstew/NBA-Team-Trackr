@@ -190,7 +190,7 @@ var App = React.createClass({displayName: "App",
     render: function() {
         return (
             React.createElement("div", null,
-                React.createElement(Header, {text: "NBA Team Efficiency"}),
+                React.createElement(Header, {text: "NBA Team Trackr"}),
                 React.createElement("div", {className: "container"},
                     React.createElement("div", {className: "row"},
                         React.createElement("div", {className: "center-block trim"},
