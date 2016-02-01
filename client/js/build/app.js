@@ -1,6 +1,3 @@
-// import React from 'react';
-// var React = require('react')
-// var React = require('../../react/react.js')
 
 var Header = React.createClass({displayName: "Header",
     render: function () {
@@ -98,11 +95,9 @@ var teamListItem = React.createClass({displayName: "teamListItem",
                         React.createElement("h3", {className: "panel-title"}, this.props.team.name),
                         React.createElement("p", {className: "panel-sub-title"}, this.props.team.mascot),
                         React.createElement("p", {className: "level"}, (this.props.team.margin)),
-                        React.createElement("p", {className: "level"}, (this.props.team.pace)),
-                        // React.createElement("p", null, React.createElement("img", {src: "pics/icon-tags.png", className: "icon"}), React.createElement("a", {href: "#", onClick: this.linkHandler}, this.props.team.location)),
-                        // React.createElement("p", null, React.createElement("img", {src: "pics/icon-tags.png", className: "icon"}), links),
-                        React.createElement("p", null, React.createElement("img", {src: "pics/icon-tags.png", className: "icon"}), React.createElement("a", {href: "#", onClick: this.linkHandler}, this.props.team.location)),
-                        React.createElement("p", null, React.createElement("img", {src: "pics/icon-tags.png", className: "icon"}), React.createElement("a", {href: "#", onClick: this.linkHandler}, this.props.team.location))
+                        // React.createElement("p", {className: "level"}, (this.props.team.pace)),
+                        React.createElement("p", {className: "line-item"}, (this.props.team.pace)),
+                        React.createElement("p", null, React.createElement("a", {href: "#", onClick: this.linkHandler}, this.props.team.location))
                     )
                 )
             )
@@ -158,8 +153,8 @@ var App = React.createClass({displayName: "App",
     getInitialState: function() {
         return {
             searchKey: "",
-            min: 0,
-            max: 100,
+            min: -20,
+            max: 20,
             teams: [],
             total: 0,
             page: 1
