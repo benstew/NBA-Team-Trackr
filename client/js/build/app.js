@@ -24,7 +24,7 @@ var SearchBar = React.createClass({displayName: "SearchBar",
         return (
             React.createElement("div", {className: "search-wrapper"},
                 React.createElement("input", {type: "search", ref: "searchKey", className: "form-control",
-                    placeholder: "Enter a team, city, or nickname",
+                    placeholder: "Enter a team, city, or division",
                     value: this.props.searchKey,
                     onChange: this.searchKeyChangeHandler}),
                 React.createElement("button", {className: "btn btn-link"}, React.createElement("span", {className: "glyphicon glyphicon-remove", "aria-hidden": "true", onClick: this.clearText}))
