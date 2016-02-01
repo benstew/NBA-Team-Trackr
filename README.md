@@ -1,13 +1,13 @@
-#NBA Team Efficiency
-Comparison of the "Net Efficiency" by number of possessions
+#NBA Team Trackr
+Visualizing the relationship between average margin of victory and pace.
 
 ###Description
-A key statistic when comparing elite teams, is the average margin of victory. This value helps to
-quantify a teams dominance as they progress through the season. With the recent blow out wins by the Golden State Warriors,
-I wanted a better way to easily visualize the data.
+A key statistic (especially when comparing elite teams) is the "Average Margin of Victory". This value helps to
+quantify how dominant a team is as they progress through the season. With the recent blow out wins by the Golden State Warriors,
+I wanted a better way to easily visualize this data.
 
 I thought it would be useful to build an app that lets users search through all the NBA teams (by name, location, division) and see
-if there was any correlation between average margin of victory and the average pace of a team.
+if there was any correlation between "Average Margin of Victory" and the "Average Pace" of a team.
 
 ###Calculations
 Margin = Average Points Scored - Average Points Allowed
