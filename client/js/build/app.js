@@ -50,13 +50,6 @@ var RangeSlider = React.createClass({displayName: "RangeSlider",
                 'max': this.props.max
             }
         });
-        //$el.noUiSlider_pips({
-        //    mode: 'steps',
-        //    filter: function(value) {
-        //        return value == Math.floor(value);
-        //    },
-        //    density: 2
-        //});
         $el.Link('lower').to('-inline-<div class="tooltip"></div>', function ( value ) {
             $(this).html(
                 '<span>' + value.substr(0, value.length - 1) + '</span>'
@@ -106,7 +99,6 @@ var teamListItem = React.createClass({displayName: "teamListItem",
                         React.createElement("p", {className: "panel-sub-title"}, this.props.team.mascot),
                         React.createElement("p", {className: "level"}, (this.props.team.margin)),
                         React.createElement("p", {className: "level"}, (this.props.team.pace)),
-                        React.createElement("p", {className: "level"}, (this.props.team.margin)),
                         // React.createElement("p", null, React.createElement("img", {src: "pics/icon-tags.png", className: "icon"}), React.createElement("a", {href: "#", onClick: this.linkHandler}, this.props.team.location)),
                         // React.createElement("p", null, React.createElement("img", {src: "pics/icon-tags.png", className: "icon"}), links),
                         React.createElement("p", null, React.createElement("img", {src: "pics/icon-tags.png", className: "icon"}), React.createElement("a", {href: "#", onClick: this.linkHandler}, this.props.team.location)),
@@ -208,7 +200,7 @@ var App = React.createClass({displayName: "App",
                     React.createElement("div", {className: "row"},
                         React.createElement("div", {className: "center-block trim"},
                             React.createElement(SearchBar, {searchKey: this.state.searchKey, searchKeyChange: this.searchKeyChangeHandler}),
-                            React.createElement(RangeSlider, {label: "Pace", min: 0, max: 100, step: .5, onChange: this.rangeChangeHandler})
+                            React.createElement(RangeSlider, {label: "Average Margin of Victory (points)", min: -20, max: 20, step: 1, onChange: this.rangeChangeHandler})
                         )
                     )
                 ),
