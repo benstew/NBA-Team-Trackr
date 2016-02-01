@@ -1,24 +1,7 @@
 var pg = require('pg'),
-
-
     // config = require('./config'),
     Q = require('q'),
-    // databaseURL = config.databaseURL;        process.env.DATABASE_URL || "postgres://belgian@localhost/belgianbeers"
-
-    // "postgres://belgian@localhost/belgianbeers"
-
-
-    // 'postgres://localhost:5000/belgianbeers'
-
-
-
     databaseURL = process.env.DATABASE_URL || "postgres://B@localhost/team_test_2" ;
-
-    // var client = new pg.Client(connectionString);
-    // client.connect();
-
-
-
 
 /**
  * Utility function to execute a SQL query against a Postgres database
